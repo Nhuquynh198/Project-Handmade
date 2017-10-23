@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+*  {
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;} /*Trải rộng ra hai cột*/
+.col-3 {width: 25%;}   /*Trải rộng ra ba cột*/
+.col-4 {width: 33.33%;} /*Trải rộng ra bốn cột*/
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"]{
+	float:left;
+	padding:15px;
+	border:1px solid red;
+	text-align:justify;
+}
+
+
+.container
+{
+	width:100%;
+	margin:auto;
+	border:1px solid blue;
+}
+.row::after {
+	content: "";
+	 clear: both;
+	 display: table;
+	 }
+
+img 
+{
+		/*width:100%;*/
+		max-width:100%;
+		height:auto;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+    	
+    		<div class="col-12">Header</div>
+        
+        
+        <div class="row">
+            <div class="col-2" style="background-color:#FF6"></div>
+            <div class="col-10" style="background-color:#F90; float:right">
+             <div class="row">
+                <div class="col-4"><img src="images/dell3.jpg" ></div>
+                <div class="col-4"><img src="images/dell4.jpg" ></div>
+                <div class="col-4"><img src="images/dell2.jpg" ></div>
+                <div class="col-4"><img src="images/dell3.jpg" ></div>
+                <div class="col-4"><img src="images/dell4.jpg" ></div>
+                <div class="col-4"><img src="images/hp4.jpg" ></div>
+                <div class="col-4"><img src="images/dell3.jpg" ></div>
+                <div class="col-4"><img src="images/hp4.jpg" ></div>
+             </div>   
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

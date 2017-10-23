@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Responsive Design Demo</title>
+ 
+<style type="text/css">
+	header, section, aside, footer {
+		background: wheat;
+		border: 1px solid gray;
+		margin: 2px;
+		font-family: Sans-serif;
+		font-size: 1.6em;
+		font-style: bold;
+	}
+	aside, section {
+		height: 300px;
+	}
+	footer{
+		clear: both;
+	}
+ 
+/* Media queries */
+ @media  screen {
+	section {
+		width: auto;
+		float: none;
+	}
+	aside {
+		display: none;
+	}
+}
+@media screen and (min-width: 400px) {
+	section {
+		width: auto;
+		float: none;
+	}
+	aside {
+		width: auto;
+		height: 200px;
+		float: none;
+		display: block;
+	} 
+}
+ @media screen and (min-width: 800px) {
+	section {
+		width: 78%;
+		float: left;
+	}
+	aside {
+		width: 20%;
+		height: 300px;
+		float: right;
+		display: block;
+	}
+}
+</style>
+</head>
+ 
+<body>
+<header>
+	Header
+</header>
+ 
+<section>
+	Main Content
+</section>
+ 
+<aside>
+	Sidebar
+</aside>
+ 
+<footer>
+	Footer
+</footer>
+</body>
+</html>
+
+
